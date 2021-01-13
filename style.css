@@ -1,0 +1,58 @@
+body {
+    background: rgb(37, 37, 37);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    width: 500px;
+    height: 200px;
+    /* border: 3px solid rgb(196, 196, 26);
+    border-radius: 19px; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.letters {
+    min-width: 220px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    color: white;
+    /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Abril Fatface', cursive;
+    font-size: 70px;
+}
+
+.letters li {
+    transition: all 0.5s ease;
+}
+
+.letters li:hover {
+    color: rgb(196, 196, 26);
+    animation: bounce .7s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0, 05, 1, .5);
+    animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
